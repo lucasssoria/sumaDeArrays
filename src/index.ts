@@ -1,23 +1,19 @@
 import "./styles.css";
 // 1er array para pedir los 6 primeros numeros
 let ingresoDeNumeros1: number[] = new Array(6);
-let num1: number, i1: number;
-
-for (i1 = 0; i1 < 6; i1++) {
-  num1 = Number(
-    prompt("Ingreso numero: " + (i1 + 1) + "\nIngrese sus 6 primeros numeros: ")
+for (let i = 0; i < 6; i++) {
+  let num1 = Number(
+    prompt("Ingreso numero: " + (i + 1) + "\nIngrese sus 6 primeros numeros: ")
   );
-  ingresoDeNumeros1[i1] = num1;
+  ingresoDeNumeros1[i] = num1;
 }
 // 2do array para los 6 numeros a sumar
 let ingresoDeNumeros2: number[] = new Array(6);
-let num2: number, i2: number;
-
-for (i2 = 0; i2 < 6; i2++) {
-  num2 = Number(
-    prompt("Ingreso numero: " + (i2 + 1) + "\nIngrese sus 6 numeros a sumar: ")
+for (let i = 0; i < 6; i++) {
+  let num2 = Number(
+    prompt("Ingreso numero: " + (i + 1) + "\nIngrese sus 6 numeros a sumar: ")
   );
-  ingresoDeNumeros2[i2] = num2;
+  ingresoDeNumeros2[i] = num2;
 }
 // 3er array para el resultado
 let sumaDeArrays = [];
