@@ -1,8 +1,8 @@
 let array1: number[] = new Array(6);
 let array2: number[] = new Array(6);
+let sumaDeArrays: number[] = new Array(0);
 let nums1 = 0;
 let nums2 = 0;
-let sumaDeArrays = [0];
 function sumarArrays(nums1: number, nums2: number) {
   for (let i = 0; i < 6; i++) {
     nums1 = Number(
@@ -23,7 +23,6 @@ function sumarArrays(nums1: number, nums2: number) {
     suma = array1[i] + array2[i];
     sumaDeArrays[i] = suma;
   }
-  return sumaDeArrays;
 }
 sumarArrays(nums1, nums2);
 console.log(
