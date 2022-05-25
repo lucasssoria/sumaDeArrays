@@ -8,13 +8,9 @@ for (let i = 0; i < 6; i++) {
     prompt("Ingreso numero: " + (i + 1) + "\nIngrese sus 6 primeros numeros: ")
   );
   ingresoDeNumeros1[i] = num1;
+  console.log("Posicion Array1: " + i + " Numero ingresado: " + num1);
 }
-// Muestro en consola para el seguimiento de los ingresos/valores
-for (let i = 0; i < ingresoDeNumeros1.length; i++) {
-  console.log(
-    "Posicion Array1: " + i + " Numero ingresado: " + ingresoDeNumeros1[i]
-  );
-}
+
 // 2do array para los 6 numeros a sumar
 let ingresoDeNumeros2: number[] = new Array(6);
 for (let i = 0; i < 6; i++) {
@@ -22,12 +18,9 @@ for (let i = 0; i < 6; i++) {
     prompt("Ingreso numero: " + (i + 1) + "\nIngrese sus 6 numeros a sumar: ")
   );
   ingresoDeNumeros2[i] = num2;
+  console.log("Posicion Array2: " + i + " Numero a sumar: " + num2);
 }
-for (let i = 0; i < ingresoDeNumeros2.length; i++) {
-  console.log(
-    "Posicion Array2: " + i + " Numero a sumar: " + ingresoDeNumeros2[i]
-  );
-}
+
 // 3er array para el resultado
 let sumaDeArrays = [];
 let suma = 0;
